@@ -38,7 +38,7 @@
                             <form class="" action="/delete-note/{{ $item->id }}" method="POST" style="margin: 0">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" id="delete-{{$item->id}}" style="width: 60px; text-align:center; border-radius: 0.375rem; background-color: rgb(242, 41, 41); padding: 6px; color:white; font-size: 12px; font-weight:600;">
+                                <button dusk="delete-note-{{ $item->id }}" type="submit" id="delete-{{$item->id}}" style="width: 60px; text-align:center; border-radius: 0.375rem; background-color: rgb(242, 41, 41); padding: 6px; color:white; font-size: 12px; font-weight:600;">
                                     Delete
                                 </button>
                             </form>
